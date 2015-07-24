@@ -11,13 +11,14 @@ import gspread
 from oauth2client.client import SignedJwtAssertionCredentials
 
 while True:
+    locationToGrab = 12761735
     nowTime = time.strftime("%m/%d/%Y/ %H:%M:%S")
     print (nowTime)
     print ("-----------------------")
     print ("Getting Yahoo Weather...")
 # Get the weather using a WOEID. 12761735 is New York
 # Get yours here: http://woeid.rosselliot.co.nz/
-    r = weatherpy.Response('User Agent', 12761735, metric=False)
+    r = weatherpy.Response('User Agent', locationToGrab, metric=False)
 
     print ("-----------------------")
     print '{0}, {1} \n'.format(r.location.city, r.location.country)
@@ -68,7 +69,7 @@ while True:
     mySpreadsheet = gc.open ("Migranalyzer_Ez")
     worksheet = mySpreadsheet.get_worksheet(0)
 
-    worksheet.append_row ([nowTime, pressureHPA, pressureHG, temperature, humidity, visibility, currentCondition, forecastCondition, temperatureHigh, temperatureLow, conditionCode])
+    worksheet.append_row ([nowTime, pressureHPA, pressureHG, temperature, humidity, visibility, currentCondition, forecastCondition, temperatureHigh, temperatureLow, conditionCode], locationToGrab, r.location.city, r.location.country)
 
     print ("Done.")
     nextrun = 1800
