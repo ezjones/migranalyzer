@@ -70,7 +70,7 @@ while True:
     mySpreadsheet = gc.open ("Migranalyzer_Ez")
     worksheet = mySpreadsheet.get_worksheet(0)
 
-    worksheet.append_row ([nowTime, pressureHPA, pressureHG, temperature, humidity, visibility, currentCondition, forecastCondition, temperatureHigh, temperatureLow, conditionCode], locationToGrab, r.location.city, r.location.country)
+    worksheet.append_row ([nowTime, pressureHPA, pressureHG, temperature, humidity, visibility, currentCondition, forecastCondition, temperatureHigh, temperatureLow, conditionCode, locationToGrab, r.location.city, r.location.country])
 
     print ("Done.")
     nextrun = 1800
