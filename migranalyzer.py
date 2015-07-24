@@ -56,7 +56,8 @@ while True:
 # Check the gspread documentation
 # https://developers.google.com/identity/protocols/OAuth2
 # Put them in the file migrakeys.json
-    json_key = json.load(open('migrakeys.json'))
+# I read it from a file outside the repo
+    json_key = json.load(open('../migrakeys.json'))
     scope = ['https://spreadsheets.google.com/feeds']
 
     credentials = SignedJwtAssertionCredentials(json_key['client_email'], json_key['private_key'], scope)
