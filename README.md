@@ -31,5 +31,5 @@ We are on Phase 1 now but I see these ones:
 - Phase 3. Predict the data. This has to be customized for each user taking into account their past data. Every "body" is different.
 - Phase 4. Act before the migraine happens. Getting an alert would be easy but it doesn't solve the problem. I am thinking more about creating a smart device that would adjust the room values according to what it knows is good for you.
 
-That' all.
+That's all.
 I just made my headache open source!
