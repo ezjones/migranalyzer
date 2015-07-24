@@ -24,9 +24,9 @@ I have several **Arduinos** and sensors that we can use to capture data. The nex
 
 Also, I have been wearing a **Fitbit** with heart rate monitor for a month or so. They have an API so we will be able to compare this data too once I add it to the python script.
 
-# Project phases.
+# Project phases
 We are on Phase 1 now but I see these ones:
-- Phase 1. Capture data. As much as we can from all kinds of sources, sensors and devices. Get more people to join so we can compare diffenret cities.
+- Phase 1. Capture data. As much as we can from all kinds of sources, sensors and devices. Get more people to join so we can compare different cities.
 - Phase 2. Analyze the data and see what patterns we find.
 - Phase 3. Predict the data. This has to be customized for each user taking into account their past data. Every "body" is different.
 - Phase 4. Act before the migraine happens. Getting an alert would be easy but it doesn't solve the problem. I am thinking more about creating a smart device that would adjust the room values according to what it knows is good for you.
