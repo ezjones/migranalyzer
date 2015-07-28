@@ -36,4 +36,3 @@ I just made my headache open source!
 
 - Website: [Migranalyzer](https://ezjones.github.io/migranalyzer/) with charts and results.
 - Twitter: [ezjones_](https://twitter.com/ezjones_)
-
