@@ -6,13 +6,16 @@
 
 import weatherpy
 import time
+import datetime
 import json
 import gspread
 from oauth2client.client import SignedJwtAssertionCredentials
 
 while True:
-    locationToGrab = 12761735
-    nowTime = time.strftime("%m/%d/%Y/ %H:%M:%S")
+    locationToGrab = 2488042
+    now = datetime.datetime.now()
+    nowSanjose = now - datetime.timedelta(hours=3)
+    nowTime = nowSanjose.strftime("%m/%d/%Y/ %H:%M:%S")
     print (nowTime)
     print ("-----------------------")
     print ("Getting Yahoo Weather...")
@@ -68,7 +71,7 @@ while True:
 #  Name of your Google SpreadSheet
 #  Remember to share the Spreadsheet with the long email that Google OAuth2 gave you.
 # It wont work if you dont share it
-    mySpreadsheet = gc.open ("Migranalyzer_Ez")
+    mySpreadsheet = gc.open ("Migranalyzer_Tim")
     worksheet = mySpreadsheet.get_worksheet(0)
 
     worksheet.append_row ([nowTime, pressureHPA, pressureHG, temperature, humidity, visibility, currentCondition, forecastCondition, temperatureHigh, temperatureLow, conditionCode, forecastCode, locationToGrab, r.location.city, r.location.country])
