@@ -1,5 +1,8 @@
 # Migranalyzer
-Migraines analyzer.
+## Migraines analyzer.
+
+
+![Image](img/head.jpg?raw=true)
 
 I started this project to find out what causes my migraines. I have tried at least 50 apps and none really helped me to understand the problem.
 
