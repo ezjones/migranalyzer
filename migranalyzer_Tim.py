@@ -77,6 +77,10 @@ while True:
     worksheet.append_row ([nowTime, pressureHPA, pressureHG, temperature, humidity, visibility, currentCondition, forecastCondition, temperatureHigh, temperatureLow, conditionCode, forecastCode, locationToGrab, r.location.city, r.location.country])
 
     print ("Done.")
+    f = open ("out_tim.txt", "a")
+    f.write("Done:" + nowTime + "\n")
+    f.close()
+ 
     nextrun = 1800
     print ("Waiting for next run..." + str (nextrun))
     time.sleep(nextrun)
