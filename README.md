@@ -10,6 +10,12 @@ I am pretty sure my migraines are cause by weather changes but it's hard to pred
 
 The solution most doctors will give you is to take medicines until the end of time but who wants to do that.
 
+UPDATE (10/06/2015):
+**I found what was causing the migraines so I don't have to capture more data.**
+Read about the results here:
+[Migranalyzer](https://ezjones.github.io/migranalyzer/) 
+
+
 # How it works
 I have a python script that captures the weather for my location and then sends the data to Google Spreadsheets using their API.
 
